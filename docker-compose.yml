@@ -1,5 +1,5 @@
 ---
-verision: '3'
+version: '3'
 services:
   build:
     build: build
