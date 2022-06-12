@@ -2,13 +2,15 @@
 verision: '3'
 services:
   build:
-    biuld: build
+    build: build
     volumes:
       - share:/share
   app:
     image: tomcat:9.0.20-jre8-alpine
     ports:
       - 80:8080
+    depends_on:
+      - build
     volumes:
       - share:/usr/local/tomcat/webapps
 volumes:
