@@ -1,7 +1,7 @@
 ---
 verision: '3'
 services:
-  pkg:
+  build:
     biuld: build
     volumes:
       - share:/share
